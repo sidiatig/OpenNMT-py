@@ -13,7 +13,7 @@ def init_logger(log_file=None):
 
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(log_format)
-    logger.handlers = [file_handler]
+    logger.handlers = [console_handler]
     
     if log_file and log_file != '':
         file_handler = logging.FileHandler(log_file)
